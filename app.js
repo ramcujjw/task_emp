@@ -13,8 +13,7 @@ require('./db/connection');
 const nav = [{link:"/employees",name:'Home'},
     {link:'/employees/employeeAdd',name:'Add Employee'}
 ]
-//for update
-//const button = [{link:'employees/employeeUpdate/',name:'Update'}]
+
 
 const employeeRoutes = require('./routes/employeeRoutes')(nav);
 app.use('/employees',employeeRoutes)
